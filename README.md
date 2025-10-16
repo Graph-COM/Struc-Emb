@@ -24,11 +24,16 @@ For Musique:
 
 You can specify model_size to select from Qwen3 embedding 0.6/4/8B
 To run Struc-Emb-Par:
+
 `python MP_pipeline.py --model_size 0.6 --mp_type mp --device [gpu] --input_file [xxx_concat_dict.pkl] --start_idx 0`
+
 To run Struc-Emb-Par-Distill:
+
 `python MP_pipeline.py --model_size 0.6 --mp_type mp_context --device [gpu] --input_file [xxx_concat_dict.pkl] --start_idx 0`
+
 To run Struc-Emb-Seq or individual embedding or post-hoc aggregation:
 First process the target texts or concatenation texts, then run
+
 `python individual_encode.py --model_size 0.6 --batch 2 --input_file [input_file_path] --start_idx 0 --devices [gpu]`
 
 
