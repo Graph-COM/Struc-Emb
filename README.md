@@ -1,5 +1,8 @@
-The code includes the pipeline to run Struc-Emb pipelines and individual encodings
+<h1 align="center">Struc-EMB: The Potential of Structure-Aware Encoding in Language Embeddings (Struc-EMB)</h1>
 
+This repository is the implementation for the paper [Struc-EMB: The Potential of Structure-Aware Encoding in Language Embeddings](https://arxiv.org/pdf/2510.08774).
+
+## File Overview ##
 - MP_pipeline.py: contain main function to run Struc-Emb-Par and Struc-Emb-Par-Distill
 - individual_encode.py: contain main function to run individual embeddings and Struc-Emb-Seq
 - ba_mp.py: contain the implementation of Struc-Emb-Par variants
@@ -7,8 +10,7 @@ The code includes the pipeline to run Struc-Emb pipelines and individual encodin
 - evaluation_citation.ipynb: the evaluation pipeline for citation network classification
 - evaluation_musique.ipynb: the evaluation pipeline for MuSiQue dataset retrieval performance
 
-I include two datasets: Cora and MiSiQue top5 degree case, if you want to run the code for demonstration purpose
-
+## Dataset ##
 In side each dataset folder, we have files:
 - pkl file end with concat_dict.pkl: The processed file containing target segments and its related segments
 Note:
@@ -22,6 +24,7 @@ For Musique:
 - rel_paragraph.pkl: answers for the queries
 - musique_paragraphs_concat_idx.pkl: the file that match idx need in evaluation
 
+## Training ##
 You can specify model_size to select from Qwen3 embedding 0.6/4/8B
 To run Struc-Emb-Par:
 
